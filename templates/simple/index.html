@@ -1,49 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickBioLinks</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            background-color: #1a1a1a; /* 深灰色背景 */
-            color: #ffffff; /* 白色文字 */
-            text-align: center;
-            font-family: sans-serif;
-        }
-        .social-icons a {
-            color: #ffffff;
-            font-size: 24px;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        .social-icons a:hover {
-            color: #cccccc;
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        <img src="profile-placeholder.png" alt="Profile Picture" style="border-radius: 50%;">
-        <h1>YOUR NAME</h1>
-        <p>Instagram: @YOURNAME</p>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/YOURNAME" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://twitter.com/YOURNAME" target="_blank">
-                <i class="fab fa-twitter"></i>
-            </a>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Your Name Here</title>
+        <meta property="og:title" content="Your Name's Links" />
+        <meta property="og:site_name" content="yourdomain.com" />
+        <meta property="og:description" content="A list of Your Name's most important links." />
+        <link rel="stylesheet" href="css/style.css">
+        	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <meta name="theme-color" content="var(--bgColor)">
+<style>
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+.social-icon {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+.social-icon:hover {
+    color: #ccc;
+}
+</style>
+    </head>
+    <body>
+            <!--Page Content Below-->
+        <img id="userPhoto" class="animated rubberBand fast" src="images/profile-picture.webp" alt="Your Name's Photo">
+        <h1 class="animated jello">Your Name</h1>
+        <a href="https://www.instagram.com/" id="userName" class="animated fadeIn delay-1s fast">Instagram: @yourname</a>
+        <div id="links" class="animated fadeInLeft delay-1s">
+<div class="social-icons animated fadeIn delay-2s">
+    <a href="https://www.facebook.com/YOURNAME" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/YOURNAME/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.youtube.com/YOURNAME" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.tiktok.com/@YOURNAME" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+    <a href="https://twitter.com/YOURNAME" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+</div>
+            <a class="link" href="https://domain.com/" target="_blank">First Link</a>
+            <a class="link" href="https://domain.com/" target="_blank">Second Link</a>
+            <a class="link" href="https://domain.com/" target="_blank">Third Link</a>
+            <a class="link" href="https://domain.com/" target="_blank">Fourth Link</a>
+            <a class="link" href="https://domain.com/" target="_blank">Fifth Link</a>
         </div>
-    </div>
-    <div class="links">
-        <a href="#" style="display: block; background: #d3d3d3; margin: 10px; padding: 10px; border-radius: 5px;">First Link</a>
-        <a href="#" style="display: block; background: #d3d3d3; margin: 10px; padding: 10px; border-radius: 5px;">Second Link</a>
-        <!-- 其他链接 -->
-    </div>
-    <footer>
-        <p>Built with <a href="#">QuickBioLinks</a> ❤️</p>
-    </footer>
-</body>
+        
+        <a href="mailto:you@email.com" class="animated fadeIn delay-3s slow" id="userName">Email Me</a>
+            <!--Optional Attribution Repo Link-->
+        <a class="atrib" href="https://github.com/mackenly/quickbiolinks">Built With QuickBioLinks ❤️</a>
+    </body>
 </html>
